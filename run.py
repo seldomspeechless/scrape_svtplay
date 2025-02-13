@@ -7,7 +7,7 @@ from urllib.parse import urljoin
 from pathlib import Path
 import subprocess
 
-base_url = "https://www.svtplay.se"
+BASE_URL = "https://www.svtplay.se"
 
 # ask for url or path
 print("Please provide...")
@@ -50,7 +50,7 @@ for link in soup.find_all("a", href=True):
     href = link.get("href")
     if href.endswith("?video=visa"):
         href = href.replace("?video=visa", "")
-        full_url = urljoin(base_url, href)
+        full_url = urljoin(BASE_URL, href)
         unique_links.add(full_url)
 
 # write links to file
