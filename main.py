@@ -9,7 +9,7 @@ BASE_URL = "https://www.svtplay.se"
 
 def main():
     # ask for url or path
-    print("Please provide...")
+    print("\nPlease provide...")
     print("full url from svtplay (full season)")
     source = input("OR full path to last scraped html (empty will attempt to parse './last.htm'): ")
 
